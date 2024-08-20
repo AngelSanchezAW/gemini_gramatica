@@ -5,8 +5,9 @@ genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 def corregir_texto():
+    print("Programa para mejorar ortografía y gramática de texto. Escribe 'salir' para terminar.")
     while True:
-        texto = input("Ingresa el texto que deseas corregir (o escribe 'salir' para terminar): ")
+        texto = input("Texto: ")
 
         if texto.lower() == "salir":
             print("Saliendo del programa...")
